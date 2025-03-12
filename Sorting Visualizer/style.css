@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #20232a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px;
+    height: 400px;
+    width: 80%;
+}
+
+.bar {
+    margin: 0 2px;
+    background-color: #61dafb;
+    width: 20px;
+    transition: height 0.1s ease;
+}
+
+.bar.active {
+    background-color: orange;
+}
+
+.bar.sorted {
+    background-color: #4caf50;
+}
+
+.controls {
+    margin: 20px;
+}
+
+button {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
