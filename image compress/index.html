@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Compressor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Image Compressor</h2>
+    <input type="file" id="imageInput" accept="image/*" />
+    <p>Compression Quality: <span id="qualityValue">70</span>%</p>
+    <input type="range" id="qualitySlider" min="10" max="100" value="70" />
+    <br />
+    <button onclick="compressImage()">Compress & Download</button>
+    <br />
+    <img id="preview" src="" alt="Preview" style="display:none;" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
