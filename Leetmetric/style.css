@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background: linear-gradient(135deg, #1e1e2f, #2e2e4d);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #ffcc70;
+}
+
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+.user-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-input{
+    width: 75%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#search-btn{
+    padding: 0.6rem 1rem;
+    background-color: #ffcc70;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* :root {
+    --progress-degree: 0%;
+  } */
+
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #299f5d;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
+    background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+    
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 159, 0.8);
+}
+
+.circle span{
+    position: relative;
+    z-index: 2;
+}
+
+.progress{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stats-card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card{
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88);
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 45%;
+    max-width: 280px;
+    font-size: 1rem;
+    min-height: 4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h4{
+    font-size: 1rem;
+}
